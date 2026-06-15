@@ -1,0 +1,22 @@
+﻿你是一位职业规划专家。请根据以下信息，在一个JSON中完成三项分析，只返回JSON，不加任何markdown标记。
+
+学生画像：
+{student_profile}
+
+岗位要求：
+{job_profile}
+
+硬技能匹配得分（0到1）：{hard_skill_score}
+基础条件匹配得分（0到1）：{basic_score}
+
+请返回严格JSON：
+{{
+  "soft_skill_score": 0到1之间的数字（根据学生软技能与岗位软技能要求的匹配程度评分）,
+  "potential_score": 0到1之间的数字（根据学生证书、实习、项目评估发展潜力）,
+  "gap_analysis": "差距分析文本，分析学生与岗位在各维度的差距，给出改进建议（100-200字）"
+}}
+
+注意：
+- soft_skill_score和potential_score是纯数字，不带引号
+- gap_analysis是字符串，用中文
+- 只返回JSON，不要有其他内容

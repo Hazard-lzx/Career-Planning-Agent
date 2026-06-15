@@ -1,0 +1,33 @@
+# Project root .gitignore
+
+## === Backend: Java / Maven ===
+career-agent-backend/target/
+career-agent-backend/*.jar
+career-agent-backend/*.war
+career-agent-backend/*.class
+career-agent-backend/.idea/
+career-agent-backend/*.iml
+career-agent-backend/.mvn/
+career-agent-backend/mvnw
+career-agent-backend/mvnw.cmd
+
+## Sensitive config (keep local, never commit)
+career-agent-backend/src/main/resources/application.yml
+career-agent-backend/src/main/resources/application-dev.yml
+career-agent-backend/src/main/resources/application-prod.yml
+
+## === Frontend: Node / Vue ===
+career-agent-frontend/node_modules/
+career-agent-frontend/dist/
+career-agent-frontend/.env
+career-agent-frontend/.env.*
+career-agent-frontend/*.log
+
+## === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

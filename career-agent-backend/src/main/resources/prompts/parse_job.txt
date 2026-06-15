@@ -1,0 +1,20 @@
+你是职业规划专家和人力资源分析师。从以下岗位描述中提取岗位要求信息，严格返回JSON格式，不要带任何解释或markdown标记。
+
+JSON格式为：
+{{
+  "basicRequirements": {{ "degree": "学历要求", "major": "专业要求" }},
+  "hardSkills": ["技能1", "技能2"],
+  "softSkills": {{ "teamwork": "高/中/低", "pressure": "高/中/低", "communication": "高/中/低" }},
+  "certificates": ["证书1"],
+  "experience": "经验要求"
+}}
+
+注意：
+1. hard_skills为字符串数组，提取所有技术/专业硬技能
+2. soft_skills为对象，键为软技能名称，值为"高"/"中"/"低"
+3. 如果某项信息缺失，使用空数组或空字符串
+4. 必须返回合法JSON，不要包含注释
+
+岗位名称：{title}
+岗位描述：
+{job_description}

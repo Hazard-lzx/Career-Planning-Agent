@@ -1,0 +1,23 @@
+你是职业规划专家。请根据以下匹配详情，生成一段差距分析文本。
+
+学生能力画像：
+{student_profile}
+
+岗位要求画像：
+{job_profile}
+
+匹配维度得分：
+- 基本条件匹配度：{basic_score}
+- 硬技能匹配度：{hard_skill_score}
+- 软技能匹配度：{soft_skill_score}
+- 发展潜力评分：{potential_score}
+
+已匹配技能：{matched_skills}
+缺失技能：{missing_skills}
+
+请生成一段200字以内的差距分析文本，包含：
+1. 学生当前的优势
+2. 与目标岗位的主要差距
+3. 具体的改进建议
+
+直接输出分析文本，不要包含标题或其他格式。

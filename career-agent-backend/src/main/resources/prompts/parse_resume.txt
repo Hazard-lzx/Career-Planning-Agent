@@ -1,0 +1,20 @@
+你是职业规划专家。从以下简历文本中提取信息，严格返回JSON格式，不要带任何解释或markdown标记。
+
+JSON格式为：
+{{
+  "education": {{ "degree": "学历", "major": "专业", "school": "学校" }},
+  "skills": ["技能1", "技能2"],
+  "certificates": ["证书1", "证书2"],
+  "softSkills": {{ "communication": "强/中/弱", "learning": "强/中/弱", "pressure": "强/中/弱" }},
+  "internships": [ {{ "company": "公司", "position": "职位", "duration": "时长", "description": "描述" }} ],
+  "projects": [ {{ "name": "项目名", "role": "角色", "description": "描述" }} ]
+}}
+
+注意：
+1. skills为字符串数组，不要遗漏任何技术技能
+2. soft_skills为对象，键为软技能名称，值为"强"/"中"/"弱"
+3. 如果某项信息缺失，使用空数组或空字符串
+4. 必须返回合法JSON，不要包含注释
+
+简历文本：
+{resume_text}
